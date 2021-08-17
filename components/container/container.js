@@ -17,7 +17,7 @@ const Container = ({ children }) => {
           {NavBar.map((nav) => {
             return (
               <Link key={nav.text} href={nav.href}>
-                <a className='text-gray-900 md:p-4 md:text-xl text-md p-2 hover:underline hover:text-blue-500'>
+                <a className='text-gray-900 md:p-4 md:text-lg text-md p-2 hover:underline hover:text-blue-500'>
                   {nav.text}
                 </a>
               </Link>
