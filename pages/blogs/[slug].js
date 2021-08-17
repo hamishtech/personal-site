@@ -13,7 +13,7 @@ const BlogPage = ({ frontMatter, content }) => {
   return (
     <Container>
       <article className='p-5'>
-        <div className='max-w-5xl mx-auto'>
+        <div className='max-w-3xl mx-auto'>
           <h1 className='font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black'>
             {frontMatter.title}
           </h1>
@@ -25,7 +25,7 @@ const BlogPage = ({ frontMatter, content }) => {
           </div>
           {frontMatter.img && <img src={frontMatter.img} />}
         </div>
-        <div className='prose lg:prose-xl text-justify max-w-5xl mx-auto mt-10'>
+        <div className='prose lg:prose-xl text-justify max-w-3xl mx-auto mt-10'>
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
       </article>
@@ -54,7 +54,6 @@ export const getStaticProps = async ({ params }) => {
   );
 
   let matter = graymatter(blogFile);
-  console.log(matter);
 
   return {
     props: { frontMatter: matter.data, content: matter.content },

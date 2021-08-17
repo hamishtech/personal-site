@@ -4,7 +4,7 @@ const HomePageProjectCard = ({ title, text, pic, link, techStack, github }) => {
       <a
         target='_blank'
         href={link}
-        className='flex mt-10 border-2 p-10 hover:shadow-md hover:cursor-pointer items-center justify-start rounded-md '
+        className='flex mt-10 border-2 p-5 hover:shadow-md hover:cursor-pointer items-center justify-start rounded-md hover:bg-blue-50 '
       >
         <img
           className='rounded-xl mr-5 object-contain h-20 min-w-max'
@@ -12,7 +12,7 @@ const HomePageProjectCard = ({ title, text, pic, link, techStack, github }) => {
         />
         <div className='w-full'>
           <div className='flex items-center justify-between mb-4'>
-            <div className='font-bold text-xl md:text-2xl tracking-tighter text-gray-900'>
+            <div className='font-semibold text-xl md:text-2xl tracking-tighter text-gray-900'>
               {title}
             </div>
             {github && (
@@ -34,7 +34,7 @@ const HomePageProjectCard = ({ title, text, pic, link, techStack, github }) => {
             )}
           </div>
 
-          <div className='font-light text-xl mt-2 md:text-2xl tracking-tighter text-gray-700'>
+          <div className='font-light text-lg mt-2 md:text-xl tracking-tighter text-gray-700'>
             {text}
           </div>
           <div className='font-light text-lg mt-2 md:text-xl tracking-tighter italic text-gray-500'>

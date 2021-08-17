@@ -7,15 +7,15 @@ import BlogCard from "../../components/homepage/BlogCard";
 const Blogs = ({ blogs }) => {
   return (
     <Container>
-      <div className='max-w-5xl mx-auto p-5 h-screen'>
-        <h1 className='font-bold text-5xl md:text-6xl tracking-tight mb-5 text-gray-900 '>
+      <div className='max-w-3xl mx-auto md:p-5 p-10 min-h-screen'>
+        <h1 className='font-bold text-4xl md:text-5xl tracking-tight mb-5 text-gray-900 '>
           Blog
         </h1>{" "}
         <div className='text-xl md:text-2xl tracking-tight mb-5 text-gray-600'>
           I write one blog post per week. I write about life, my projects,
           fitness and other topics I find interesting.
         </div>
-        <div className='text-4xl md:text-5xl mt-10 font-semibold tracking-tight mb-5 text-gray-900'>
+        <div className='text-3xl md:text-4xl mt-10 font-semibold tracking-tight mb-5 text-gray-900'>
           All Articles
         </div>
         {blogs.map((blog) => {

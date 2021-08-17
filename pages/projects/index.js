@@ -5,10 +5,10 @@ import { projects } from "../../data/projects/projectList";
 const Projects = () => {
   return (
     <Container>
-      <div className='max-w-5xl mx-auto p-5 min-h-screen'>
+      <div className='max-w-3xl mx-auto md:p-5 p-10 min-h-screen'>
         <div className='flex justify-between items-center'>
           {" "}
-          <h1 className='font-bold text-5xl md:text-6xl tracking-tight mb-5 text-gray-900 '>
+          <h1 className='font-bold text-4xl md:text-5xl tracking-tight text-gray-900 '>
             My Projects
           </h1>
           {/* <a

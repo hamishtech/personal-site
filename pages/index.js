@@ -11,11 +11,11 @@ import { projects } from "../data/projects/projectList";
 export default function Home({ blogs }) {
   return (
     <Container>
-      <div className='max-w-5xl mx-auto md:p-5 p-10 mb-16'>
-        <h1 className='font-bold text-5xl md:text-6xl tracking-tight mb-5 text-gray-900 '>
+      <div className='max-w-3xl mx-auto md:p-5 p-10 mb-16'>
+        <h1 className='font-bold text-4xl md:text-5xl tracking-tight mb-5 text-gray-900 '>
           Hey there, I’m Hamish Boodhoo
         </h1>
-        <h3 className='text-xl md:text-2xl font-light mb-4 text-gray-800 text-justify'>
+        <h3 className='text-md md:text-lg font-light mb-4 text-gray-800 text-justify'>
           I'm a self-taught developer who previously worked in finance. I am
           passionate about building software and entrepreneurship. I use this
           site to showcase my projects and personal blog. {""}
@@ -44,7 +44,7 @@ export default function Home({ blogs }) {
           </Link>
         </h3>
         <div>
-          <h1 className='font-bold mb-5 text-4xl md:text-5xl tracking-tight mt-20 text-gray-900 dark:text-white'>
+          <h1 className='font-bold mb-5 text-3xl md:text-4xl tracking-tight mt-20 text-gray-900 '>
             Highlighted Projects
           </h1>
           {projects.map((project) => {
@@ -66,7 +66,7 @@ export default function Home({ blogs }) {
           <SeeMore slug='/projects' />
         </div>
         <div>
-          <h1 className='font-bold text-4xl md:text-5xl tracking-tight mt-20 text-gray-900'>
+          <h1 className='font-bold mb-5 text-3xl md:text-4xl tracking-tight mt-20 text-gray-900 '>
             Recent Blog Posts
           </h1>
           {blogs.map((blog) => {
