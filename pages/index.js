@@ -11,7 +11,7 @@ import { projects } from "../data/projects/projectList";
 export default function Home({ blogs }) {
   return (
     <Container>
-      <div className='max-w-3xl mx-auto md:p-5 p-10 mb-16'>
+      <div className='max-w-3xl mx-auto md:p-5 p-10 '>
         <h1 className='font-bold text-4xl md:text-5xl tracking-tight mb-5 text-gray-900 '>
           Hey there, I’m Hamish Boodhoo
         </h1>

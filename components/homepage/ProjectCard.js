@@ -7,7 +7,7 @@ const HomePageProjectCard = ({ title, text, pic, link, techStack, github }) => {
         className='flex mt-10 border-2 p-5 hover:shadow-md hover:cursor-pointer items-center justify-start rounded-md hover:bg-blue-50 '
       >
         <img
-          className='rounded-xl mr-5 object-contain h-20 min-w-max'
+          className='rounded-xl mr-5 object-contain h-20 '
           src={pic}
         />
         <div className='w-full'>
