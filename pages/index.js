@@ -1,82 +1,117 @@
-import Head from 'next/head'
+import fs from "fs";
+import graymatter from "gray-matter";
+import Link from "next/link";
+import path from "path";
+import Container from "../components/container/container";
+import BlogCard from "../components/homepage/BlogCard";
+import HomePageProjectCard from "../components/homepage/ProjectCard";
+import SeeMore from "../components/homepage/seeMore";
+import { projects } from "../data/projects/projectList";
 
-export default function Home() {
+export default function Home({ blogs }) {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
+    <Container>
+      <div className='max-w-5xl mx-auto md:p-5 p-10 mb-16'>
+        <h1 className='font-bold text-5xl md:text-6xl tracking-tight mb-5 text-gray-900 '>
+          Hey there, I’m Hamish Boodhoo
         </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <h3 className='text-xl md:text-2xl font-light mb-4 text-gray-800 text-justify'>
+          I'm a self-taught developer who previously worked in finance. I am
+          passionate about building software and entrepreneurship. I use this
+          site to showcase my projects and personal blog. {""}
+          <Link href='/projects'>
+            <alert>
+              <span className='underline hover:cursor-pointer text-blue-500'>
+                Check out my projects
+              </span>
+            </alert>
+          </Link>
+          , {""}
+          <Link href='/blogs'>
+            <a>
+              <span className='underline hover:cursor-pointer text-blue-500'>
+                read my blog
+              </span>{" "}
+            </a>
+          </Link>
+          or{" "}
+          <Link href='/about'>
+            <a>
+              <span className='underline hover:cursor-pointer text-blue-500 '>
+                learn more about me.
+              </span>
+            </a>
+          </Link>
+        </h3>
+        <div>
+          <h1 className='font-bold mb-5 text-4xl md:text-5xl tracking-tight mt-20 text-gray-900 dark:text-white'>
+            Highlighted Projects
+          </h1>
+          {projects.map((project) => {
+            return (
+              <div key={project.title}>
+                {project.highlighted ? (
+                  <HomePageProjectCard
+                    title={project.title}
+                    github={project.github}
+                    text={project.text}
+                    link={project.link}
+                    pic={project.pic}
+                    techStack={project.techStack}
+                  />
+                ) : null}
+              </div>
+            );
+          })}
+          <SeeMore slug='/projects' />
         </div>
-      </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
-    </div>
-  )
+        <div>
+          <h1 className='font-bold text-4xl md:text-5xl tracking-tight mt-20 text-gray-900'>
+            Recent Blog Posts
+          </h1>
+          {blogs.map((blog) => {
+            return (
+              <div key={blog.title}>
+                <BlogCard
+                  title={blog.title}
+                  subtitle={blog.subtitle}
+                  slug={blog.slug}
+                  date={blog.date}
+                />
+              </div>
+            );
+          })}
+          <SeeMore slug='/blogs' />
+        </div>
+      </div>
+    </Container>
+  );
 }
+
+export const getStaticProps = async (context) => {
+  // get the blogs from the blog directory
+  const blogFiles = fs.readdirSync(path.join("data/blogs"));
+
+  // get the slugs from filename
+  const rawBlogs = blogFiles.map((blog) => {
+    let slug = blog.replace(".md", "");
+    let blogFile = fs.readFileSync(path.join("data/blogs", blog), "utf-8");
+    let { data: frontmatter } = graymatter(blogFile);
+    return {
+      slug,
+      title: frontmatter.title,
+      date: frontmatter.date,
+      subtitle: frontmatter.subtitle,
+    };
+  });
+
+  let blogs = rawBlogs.sort((a, b) => {
+    return a.date > b.date ? -1 : 1;
+  });
+
+  blogs.splice(3);
+
+  return {
+    props: { blogs },
+  };
+};
