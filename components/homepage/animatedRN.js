@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { RoughNotation } from "react-rough-notation";
 
-const AnimatedRN = ({ children }) => {
+const AnimatedBoxRN = ({ children }) => {
   let [hover, setHover] = useState(false);
   return (
     <div
-      className='hover:text-blue-500'
       onMouseOver={() => {
         setHover(true);
       }}
@@ -13,11 +12,16 @@ const AnimatedRN = ({ children }) => {
         setHover(false);
       }}
     >
-      <RoughNotation type='underline' show={true} color='#3b81f6' show={hover}>
+      {" "}
+      <RoughNotation
+        type='box'
+        color={hover ? "#3b81f6" : "#9ba3af"}
+        show={true}
+      >
         {children}
       </RoughNotation>
     </div>
   );
 };
 
-export default AnimatedRN;
+export default AnimatedBoxRN;
