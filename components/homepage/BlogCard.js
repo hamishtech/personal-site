@@ -11,14 +11,14 @@ const BlogCard = ({ title, subtitle, slug, date }) => {
       <a>
         <div className='flex flex-col mt-10 group'>
           <div className='flex justify-between'>
-            <div className='font-semibold text-lg md:text-xl text-gray-900 group-hover:text-blue-500 mr-5'>
+            <div className='font-semibold text-lg md:text-xl text-gray-900 group-hover:text-blue-600 mr-5'>
               {title}
             </div>
-            <div className='text-sm font-semibold md:text-lg text-gray-400 group-hover:text-blue-500'>
+            <div className='text-sm font-semibold md:text-lg text-gray-400 group-hover:text-blue-600'>
               {formattedDate[0]}
             </div>
           </div>
-          <div className='mt-3 text-md font-light md:text-xl text-gray-700 group-hover:text-blue-500'>
+          <div className='mt-3 text-md font-light md:text-xl text-gray-700 group-hover:text-blue-600'>
             {subtitle}
           </div>
         </div>

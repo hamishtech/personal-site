@@ -19,18 +19,19 @@ export default function Home({ blogs }) {
         <h3 className='text-md md:text-lg font-light mb-4 text-gray-800 text-justify'>
           I'm a self-taught developer who previously worked in finance. I am
           passionate about building software and entrepreneurship. I use this
-          site to showcase my projects and personal blog. {""}
+          site to showcase my projects and personal blog. While you are here,
+          feel free to
           <Link href='/projects'>
             <a>
-              <span className='hover:cursor-pointer text-blue-500'>
+              <span className='hover:cursor-pointer text-green-500'>
                 <RoughNotation
                   type='underline'
                   show={true}
-                  color='#3b81f6'
+                  color='#069668'
                   animationDuration={1500}
                 >
                   {" "}
-                  Check out my projects
+                  check out my projects
                 </RoughNotation>
               </span>
             </a>
@@ -53,11 +54,11 @@ export default function Home({ blogs }) {
           or
           <Link href='/about'>
             <a>
-              <span className='hover:cursor-pointer text-blue-500'>
+              <span className='hover:cursor-pointer text-red-500'>
                 <RoughNotation
                   type='underline'
                   show={true}
-                  color='#3b81f6'
+                  color='#ef4444'
                   animationDuration={1500}
                 >
                   {" "}
