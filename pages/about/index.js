@@ -39,7 +39,7 @@ const About = () => {
                     <ol className=''>
                       {item.text.map((item) => {
                         return (
-                          <li className='flex items-center text-green-700'>
+                          <li className={`flex items-center text-green-600`}>
                             <svg class='h-4 w-4 mr-2' viewBox='0 0 24 24'>
                               <g
                                 fill='none'

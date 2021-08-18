@@ -9,16 +9,16 @@ const BlogCard = ({ title, subtitle, slug, date }) => {
   return (
     <Link href={"/blogs/" + slug}>
       <a>
-        <div className='flex flex-col mt-10 group'>
+        <div className='flex flex-col mt-10 group p-5 border-1 p-5 shadow-md hover:cursor-pointer  rounded-lg bg-gray-50 hover:bg-blue-50 '>
           <div className='flex justify-between'>
-            <div className='font-semibold text-lg md:text-xl text-gray-900 group-hover:text-blue-500 mr-5'>
+            <div className='font-semibold text-lg md:text-xl  tracking-tighter    text-gray-900  mr-5'>
               {title}
             </div>
-            <div className='text-sm font-semibold md:text-lg text-gray-400 group-hover:text-blue-500'>
+            <div className='text-sm font-semibold md:text-md text-gray-400 '>
               {formattedDate[0]}
             </div>
           </div>
-          <div className='mt-3 text-md font-light md:text-xl text-gray-700 group-hover:text-blue-500'>
+          <div className='mt-3 text-md font-light md:text-lg text-gray-700'>
             {subtitle}
           </div>
         </div>

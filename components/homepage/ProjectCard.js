@@ -4,7 +4,7 @@ const HomePageProjectCard = ({ title, text, pic, link, techStack, github }) => {
       <a
         target='_blank'
         href={link}
-        className='flex mt-10 border-2 p-5 hover:shadow-md hover:cursor-pointer items-center justify-start rounded-md hover:bg-blue-50 '
+        className='flex mt-10 border-1 p-5 shadow-md hover:cursor-pointer items-center justify-start rounded-lg bg-gray-50 hover:bg-blue-50 '
       >
         <img className='rounded-xl mr-5 object-contain h-16 ' src={pic} />
         <div className='w-full'>
@@ -15,7 +15,7 @@ const HomePageProjectCard = ({ title, text, pic, link, techStack, github }) => {
             {github && (
               <a
                 href={github}
-                className='text-gray-400 hover:text-gray-500 transition-colors duration-200 z-50'
+                className='text-gray-400 hover:text-gray-500 transition-colors duration-200'
               >
                 <svg
                   width='25'
