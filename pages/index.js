@@ -2,6 +2,7 @@ import fs from "fs";
 import graymatter from "gray-matter";
 import Link from "next/link";
 import path from "path";
+import { RoughNotation } from "react-rough-notation";
 import Container from "../components/container/container";
 import BlogCard from "../components/homepage/BlogCard";
 import HomePageProjectCard from "../components/homepage/ProjectCard";
@@ -11,7 +12,7 @@ import { projects } from "../data/projects/projectList";
 export default function Home({ blogs }) {
   return (
     <Container>
-      <div className='max-w-3xl mx-auto md:p-5 p-10 mb-16'>
+      <div className='max-w-3xl mx-auto md:p-5 p-10 '>
         <h1 className='font-bold text-4xl md:text-5xl tracking-tight mb-5 text-gray-900 '>
           Hey there, I’m Hamish Boodhoo
         </h1>
@@ -20,32 +21,56 @@ export default function Home({ blogs }) {
           passionate about building software and entrepreneurship. I use this
           site to showcase my projects and personal blog. {""}
           <Link href='/projects'>
-            <alert>
-              <span className='underline hover:cursor-pointer text-blue-500'>
-                Check out my projects
+            <a>
+              <span className='hover:cursor-pointer text-blue-500'>
+                <RoughNotation
+                  type='underline'
+                  show={true}
+                  color='#3b81f6'
+                  animationDuration={1500}
+                >
+                  {" "}
+                  Check out my projects
+                </RoughNotation>
               </span>
-            </alert>
+            </a>
           </Link>
           , {""}
           <Link href='/blogs'>
             <a>
-              <span className='underline hover:cursor-pointer text-blue-500'>
-                read my blog
-              </span>{" "}
+              <span className='hover:cursor-pointer text-blue-500'>
+                <RoughNotation
+                  type='underline'
+                  show={true}
+                  color='#3b81f6'
+                  animationDuration={1500}
+                >
+                  read my blog{" "}
+                </RoughNotation>
+              </span>
             </a>
           </Link>
-          or{" "}
+          or
           <Link href='/about'>
             <a>
-              <span className='underline hover:cursor-pointer text-blue-500 '>
-                learn more about me.
+              <span className='hover:cursor-pointer text-blue-500'>
+                <RoughNotation
+                  type='underline'
+                  show={true}
+                  color='#3b81f6'
+                  animationDuration={1500}
+                >
+                  {" "}
+                  learn more about me.{" "}
+                </RoughNotation>
               </span>
             </a>
           </Link>
         </h3>
+
         <div>
           <h1 className='font-bold mb-5 text-3xl md:text-4xl tracking-tight mt-20 text-gray-900 '>
-            Highlighted Projects
+            Main Projects
           </h1>
           {projects.map((project) => {
             return (
