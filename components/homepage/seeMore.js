@@ -7,7 +7,7 @@ const SeeMore = ({ slug }) => {
       {" "}
       <button
         type='button'
-        className='flex items-center text-sm md:text-md my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-700 hover:text-blue-600 '
+        className='flex items-center text-sm md:text-md my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-700 hover:text-blue-500 '
         onClick={() => router.push(slug)}
       >
         See all{" "}

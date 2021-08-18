@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <Container>
       <div className='max-w-3xl mx-auto md:p-5 p-10 min-h-screen'>
-        <div className='flex justify-between items-center'>
+        <div className='flex justify-between items-center mb-5'>
           {" "}
           <h1 className='font-bold text-4xl md:text-5xl tracking-tight text-gray-900 '>
             My Projects
@@ -22,6 +22,10 @@ const Projects = () => {
               ></path>
             </svg>
           </a> */}
+        </div>
+        <div className='text-lg md:text-xl tracking-tight mb-5 text-gray-600'>
+          I write one blog post per week. I write about life, my projects,
+          fitness and other topics I find interesting.
         </div>
 
         {projects.map((project) => {
