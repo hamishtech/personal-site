@@ -18,13 +18,14 @@ const About = () => {
           <p className='mb-5'>
             {" "}
             Feeling unfulfilled during my time working in finance, I wanted to
-            try out new things. I decided to try my hand at coding and it
+            try out new things. I decided to have a go at coding and it
             immediately captivated me. I should have known coding was for me.
             After all, my favourite exercise when working in finance was
             financial modelling, which involved writing a lot of formulas on
-            excel. Since February 2021, I've spent most of my free time
-            self-learning computer science and web development. You can check
-            out my current capabilities below:
+            excel. Since February 2021, I've spent most of my free time learning
+            computer science and web development. I am now looking to make the
+            switch into a tech career. You can check out my current capabilities
+            below:
             <ul className='mt-5'>
               {coding.map((item) => (
                 <li key={item.title} className='mb-5'>
@@ -102,7 +103,7 @@ const About = () => {
               </a>
             </span>
             . Building these products has taught me about the importance of
-            marketing, pricing and customer feedback when building software. As
+            marketing, pricing and customer feedback when building products. As
             of September 2021, I plan on building at least one SaaS business per
             month in the hope of creating successful mini businesses that can
             generate me some side-income.

@@ -78,7 +78,7 @@ export default function Home({ blogs }) {
               profitable side-projects.
             </RoughNotation>{" "}
             My goal is to use my software development skills to build several
-            successful micro SaaS businesses. I aim start a{" "}
+            successful micro SaaS businesses. I aim to start a{" "}
             <RoughNotation
               type='highlight'
               multiline={true}
@@ -88,8 +88,8 @@ export default function Home({ blogs }) {
             >
               new project each month
             </RoughNotation>{" "}
-            until one sticks. This also allows me grow my software development
-            skills and develop an understanding of key entrepreneurship
+            until one sticks. Building businesses allows me to grow my software
+            development skills and understanding of key entrepreneurship
             concepts. While you're here, you can
             <Link href='/projects'>
               <a className='text-blue-500'>
