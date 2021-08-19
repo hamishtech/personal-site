@@ -15,7 +15,7 @@ const Container = ({ children }) => {
                 xmlns='http://www.w3.org/2000/svg'
                 width='100'
                 height='100'
-                class='text-xl hover:text-blue-700 transition-colors duration-200 hover:cursor-pointer'
+                className='text-xl hover:text-blue-700 transition-colors duration-200 hover:cursor-pointer'
                 viewBox='0 0 860.000000 978.000000'
                 preserveAspectRatio='xMidYMid meet'
               >
@@ -202,7 +202,7 @@ c63 -68 106 -132 119 -178 8 -28 31 -58 74 -100 53 -51 65 -69 80 -120 31
             {NavBar.map((nav) => {
               return (
                 <Link key={nav.text} href={nav.href}>
-                  <a className='text-gray-900 md:mx-4 md:text-lg text-md mx-2'>
+                  <a className='text-gray-900 md:mx-2 md:text-lg text-md mx-2 font-semibold'>
                     <AnimatedRN>{nav.text}</AnimatedRN>
                   </a>
                 </Link>

@@ -10,17 +10,21 @@ const About = () => {
         </h1>{" "}
         <div className='text-md md:text-lg tracking-tight mb-5 text-gray-600'>
           <p className='mb-5'>
-            Hey, I’m Hamish. I'm a self-taught developer. I previously worked in
-            investment banking and growth capital for 1 year but also my
-            family's own business for 1 year. I hold a Bachelors in
+            Hey, I’m Hamish. My background is in finance, where I worked in
+            investment banking and growth capital. I hold a Bachelors in
             International Business and a Masters in Finance from Maastricht
             University, Netherlands.
           </p>{" "}
           <p className='mb-5'>
             {" "}
-            I’m currently looking for a job as a software developer. I have
-            taught myself full-stack development, you can check out my coding
-            capabilities below:
+            Feeling unfulfilled during my time working in finance, I wanted to
+            try out new things. I decided to try my hand at coding and it
+            immediately captivated me. I should have known coding was for me.
+            After all, my favourite exercise when working in finance was
+            financial modelling, which involved writing a lot of formulas on
+            excel. Since February 2021, I've spent most of my free time
+            self-learning computer science and web development. You can check
+            out my current capabilities below:
             <ul className='mt-5'>
               {coding.map((item) => (
                 <li key={item.title} className='mb-5'>
@@ -65,9 +69,10 @@ const About = () => {
             </ul>
           </p>
           <p className='mb-5'>
-            I also love to build micro SaaS businesses to fuel my interest in
-            entrepreneurship and building software. I've built two SaaS products
-            that I've released to the public so far,{" "}
+            Armed with coding skills, I also realised that I can now build
+            businesses. The concept of building profitable side projects is very
+            appealing to me. I've built two SaaS products that I've released to
+            the public so far,{" "}
             <span className='text-blue-500 '>
               <a href='https://www.apscend.com/'>
                 {" "}
@@ -97,17 +102,17 @@ const About = () => {
               </a>
             </span>
             . Building these products has taught me about the importance of
-            marketing, pricing and customer feedback when building software. I
-            plan on building at least one SaaS business per month in the hope of
-            creating a business that gains traction and generates me some
-            side-income.
+            marketing, pricing and customer feedback when building software. As
+            of September 2021, I plan on building at least one SaaS business per
+            month in the hope of creating successful mini businesses that can
+            generate me some side-income.
           </p>
           <p className='mt-5'></p>
           <p className='mb-5'>
-            I spend my free time doing sports, coding personal projects, playing
-            video games and enjoying time with friends/family. I'm currently in
-            based in Mauritius, but lived in the UK, Netherlands and Germany
-            over the last 6 years.
+            I spend my free time doing sports, watching football and coding
+            personal projects. I'm currently in based in Mauritius, but lived in
+            the UK, Netherlands and Germany over the last 6 years. I am fluent
+            in English and French.
           </p>
         </div>
       </div>
