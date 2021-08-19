@@ -23,7 +23,7 @@ export default function Home({ blogs }) {
               type='highlight'
               multiline={true}
               show={true}
-              color='#a7f3d0'
+              color='#abff4f'
               animationDuration={1500}
             >
               full-stack developer
@@ -33,7 +33,7 @@ export default function Home({ blogs }) {
               type='highlight'
               multiline={true}
               show={true}
-              color='#c7d2fd'
+              color='#fcf300'
               animationDuration={1500}
             >
               software
@@ -43,7 +43,7 @@ export default function Home({ blogs }) {
               type='highlight'
               multiline={true}
               show={true}
-              color='#ffff3f'
+              color='#0aff99'
               animationDuration={1500}
             >
               entrepreneurship
@@ -61,7 +61,7 @@ export default function Home({ blogs }) {
                   color='#5fa4f9'
                   animationDuration={1500}
                 >
-                  learn more about me.
+                  learn more about me and my skills.
                 </RoughNotation>
               </a>
             </Link>
@@ -72,7 +72,7 @@ export default function Home({ blogs }) {
               type='highlight'
               multiline={true}
               show={true}
-              color='#fecaca'
+              color='#0aefff'
               animationDuration={1500}
             >
               profitable side-projects.
@@ -83,14 +83,12 @@ export default function Home({ blogs }) {
               type='highlight'
               multiline={true}
               show={true}
-              color='#ddd6fe'
+              color='#f72585'
               animationDuration={1500}
             >
               new project each month
             </RoughNotation>{" "}
-            until one sticks. Building businesses allows me to grow my software
-            development skills and understanding of key entrepreneurship
-            concepts. While you're here, you can
+            until one sticks. While you're here, you can
             <Link href='/projects'>
               <a className='text-blue-500'>
                 {" "}
@@ -112,7 +110,7 @@ export default function Home({ blogs }) {
               type='highlight'
               multiline={true}
               show={true}
-              color='#deff0a'
+              color='#4cc9f0'
               animationDuration={1500}
             >
               personal blog

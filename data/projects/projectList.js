@@ -4,7 +4,7 @@ export const projects = [
     text: "SaaS for students to track their job applications in the investment banking industry.",
     pic: "https://images-platform.99static.com//-G4Ae04Qll-CcNd8g4N5_3oSGrw=/665x348:1328x1011/fit-in/500x500/99designs-contests-attachments/91/91307/attachment_91307187",
     link: "https://apscend.com",
-    techStack: "React(create-react-app) • MongoDB • Express",
+    techStack: "React • MongoDB • Express",
     highlighted: true,
   },
   {
@@ -13,7 +13,7 @@ export const projects = [
     pic: "https://p.kindpng.com/picc/s/30-300671_squagray-icon-free-download-twitter-icon-black-square.png",
     github: "https://github.com/HB-1001/twics",
     link: "https://morpher.vercel.app/",
-    techStack: " Next.js • PostgreSQL • TwitterAPI",
+    techStack: " Next.js • PostgreSQL • Scripting & Automation",
     highlighted: true,
   },
   {
@@ -31,7 +31,7 @@ export const projects = [
     pic: "https://i.pinimg.com/originals/b6/cd/e8/b6cde81d1c489b0e20d85a6e06c5f8f9.png",
     link: "https://noteapp-hbtech.herokuapp.com/",
     github: "https://github.com/HB-1001/NoteApp-Theme-MUI",
-    techStack: " React(create-react-app) • MongoDB • GraphQL",
+    techStack: " React • MongoDB • GraphQL",
     highlighted: false,
   },
 ];
