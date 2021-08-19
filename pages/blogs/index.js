@@ -11,9 +11,9 @@ const Blogs = ({ blogs }) => {
         <h1 className='font-bold text-4xl md:text-5xl tracking-tight mb-5 text-gray-900 '>
           Blog
         </h1>{" "}
-        <div className='text-lg md:text-xl tracking-tight mb-5 text-gray-600'>
-          I write one blog post per week. I write about life, my projects,
-          fitness and other topics I find interesting.
+        <div className='text-md md:text-xl tracking-tight mb-5 text-gray-600'>
+          I write one blog post per week. I write about my experience building
+          software and about other topics such as fitness and life.
         </div>
         <div className='text-3xl md:text-4xl mt-10 font-semibold tracking-tight mb-5 text-gray-900'>
           All Articles

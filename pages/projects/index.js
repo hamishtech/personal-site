@@ -14,8 +14,7 @@ const Projects = () => {
         </div>
         <div className='text-lg md:text-xl tracking-tight mb-5 text-gray-600'>
           Check out the list of my projects below. It contains SaaS businesses
-          and hobby projects. I aim to build one micro SaaS per
-          month.
+          and hobby projects.
         </div>
 
         {projects.map((project) => {

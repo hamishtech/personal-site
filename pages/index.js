@@ -7,6 +7,7 @@ import Container from "../components/container/container";
 import BlogCard from "../components/homepage/BlogCard";
 import HomePageProjectCard from "../components/homepage/ProjectCard";
 import SeeMore from "../components/homepage/seeMore";
+import Socials from "../components/socials";
 import { projects } from "../data/projects/projectList";
 
 export default function Home({ blogs }) {
@@ -33,7 +34,7 @@ export default function Home({ blogs }) {
               type='highlight'
               multiline={true}
               show={true}
-              color='#fcf300'
+              color='#ff5d8f'
               animationDuration={1500}
             >
               software
@@ -46,11 +47,11 @@ export default function Home({ blogs }) {
               color='#0aff99'
               animationDuration={1500}
             >
-              entrepreneurship
-            </RoughNotation>
-            . My background is in finance and the corporate world. However I've
-            discovered a passion for software development and computer science.
-            I'm currently looking to switch into the tech industry as a{" "}
+              entrepreneurship.
+            </RoughNotation>{" "}
+            My background is in finance and the corporate world. However, I've
+            discovered a deeper interest in software development and computer
+            science. I'm currently looking to enter the tech industry as a
             developer. Feel free to{" "}
             <Link href='/about'>
               <a className='text-blue-500'>
@@ -83,12 +84,12 @@ export default function Home({ blogs }) {
               type='highlight'
               multiline={true}
               show={true}
-              color='#f72585'
+              color='#c77dff'
               animationDuration={1500}
             >
-              new project each month
+              new startup each month.
             </RoughNotation>{" "}
-            until one sticks. While you're here, you can
+            While you're here, you can
             <Link href='/projects'>
               <a className='text-blue-500'>
                 {" "}
@@ -110,13 +111,13 @@ export default function Home({ blogs }) {
               type='highlight'
               multiline={true}
               show={true}
-              color='#4cc9f0'
+              color='#fbff12'
               animationDuration={1500}
             >
               personal blog
             </RoughNotation>
             . Where I write about various topics such as my experience building
-            my project and software development. If you have some free time,
+            software. If you have some free time,
             <Link href='/blogs'>
               <a className='text-blue-500'>
                 {" "}
@@ -133,6 +134,10 @@ export default function Home({ blogs }) {
               </a>
             </Link>
           </p>{" "}
+          <p className='mt-5 text-gray-700 font-semibold tracking-tighter'>
+            Feel free to reach out if you want to hire a developer, have
+            questions or just want to connect.
+          </p>
         </h3>
         <div>
           <h1 className='font-bold mb-5 text-3xl md:text-4xl tracking-tight mt-20 text-gray-900 '>

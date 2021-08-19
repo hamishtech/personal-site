@@ -14,13 +14,13 @@ const BlogPage = ({ frontMatter, content }) => {
     <Container>
       <article className='p-5'>
         <div className='max-w-3xl mx-auto'>
-          <h1 className='font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black'>
+          <h1 className='font-bold text-3xl md:text-4xl tracking-tight mb-4 text-black'>
             {frontMatter.title}
           </h1>
-          <div className='flex justify-between items-center text-lg md:text-xl text-gray-500 my-7'>
+          <div className='flex justify-between items-center text-md md:text-lg text-gray-500 my-7'>
             <div>{date}</div> <div>{time.text}</div>
           </div>
-          <div className='text-xl md:text-2xl text-gray-600 my-7 italic'>
+          <div className='text-md md:text-lg text-gray-600 my-7 italic'>
             {frontMatter.subtitle}
           </div>
           {frontMatter.img && <img src={frontMatter.img} />}

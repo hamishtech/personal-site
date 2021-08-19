@@ -133,7 +133,7 @@ const coding = [
       "HTML",
       "CSS (Chakra-UI & TailwindCSS)",
     ],
-    color: "#a7f3d0",
+    color: "#ccff33",
   },
   {
     title: "Backend Web Development",
@@ -144,7 +144,7 @@ const coding = [
       "SQL(PostgreSQL)",
       "GraphQL",
     ],
-    color: "#c7d2fd",
+    color: "#0aefff",
   },
   {
     title: "Other Knowledge  ",
@@ -153,6 +153,6 @@ const coding = [
       "CI/CD (Docker, Travis, Github Actions)",
       "Data Structures & Algorithms",
     ],
-    color: "#fde68a",
+    color: "#0aff99",
   },
 ];
