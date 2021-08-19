@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Head from "next/head";
+
 import Socials from "../socials";
 import Footer from "./footer";
 import AnimatedRN from "./roughNotation";
@@ -6,6 +8,11 @@ import AnimatedRN from "./roughNotation";
 const Container = ({ children }) => {
   return (
     <>
+      <Head>
+        <title>Hamish Tech</title>
+        <link rel='shortcut icon' href='/images/favicon.ico' />
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      </Head>
       <nav className='flex items-center justify-between max-w-4xl p-5 mx-auto text-gray-900 bg-white sticky md:my-5 bg-opacity-60 top-0 z-50 backdrop-filter backdrop-blur-lg'>
         <div className='flex flex-col'>
           <div>

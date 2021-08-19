@@ -7,7 +7,6 @@ import Container from "../components/container/container";
 import BlogCard from "../components/homepage/BlogCard";
 import HomePageProjectCard from "../components/homepage/ProjectCard";
 import SeeMore from "../components/homepage/seeMore";
-import Socials from "../components/socials";
 import { projects } from "../data/projects/projectList";
 
 export default function Home({ blogs }) {
@@ -62,7 +61,7 @@ export default function Home({ blogs }) {
                   color='#5fa4f9'
                   animationDuration={1500}
                 >
-                  learn more about me and my skills.
+                  learn more about myself and my skills.
                 </RoughNotation>
               </a>
             </Link>
@@ -78,8 +77,8 @@ export default function Home({ blogs }) {
             >
               profitable side-projects.
             </RoughNotation>{" "}
-            My goal is to use my software development skills to build several
-            successful micro SaaS businesses. I aim to start a{" "}
+            My goal is to use my software development skills to build successful
+            micro SaaS businesses. I aim to start a{" "}
             <RoughNotation
               type='highlight'
               multiline={true}

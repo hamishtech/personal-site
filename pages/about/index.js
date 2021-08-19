@@ -8,7 +8,7 @@ const About = () => {
         <h1 className='font-bold text-4xl md:text-5xl tracking-tight mb-5 text-gray-900 '>
           About
         </h1>{" "}
-        <div className='text-md md:text-lg tracking-tight mb-5 text-gray-600'>
+        <div className='text-md md:text-lg font-light mb-5 text-gray-600'>
           <p className='mb-5'>
             Hey, I’m Hamish. My background is in finance, where I worked in
             investment banking and growth capital. I hold a Bachelors in
@@ -57,7 +57,7 @@ const About = () => {
                                 <path d='M22 4L12 14.01l-3-3'></path>
                               </g>
                             </svg>
-                            <div className='inline-block text-gray-800'>
+                            <div className='inline-block text-gray-600 '>
                               {item}
                             </div>
                           </li>
