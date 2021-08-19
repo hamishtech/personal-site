@@ -14,61 +14,128 @@ export default function Home({ blogs }) {
     <Container>
       <div className='max-w-3xl mx-auto md:p-5 p-10 '>
         <h1 className='font-bold text-4xl md:text-5xl tracking-tight mb-5 text-gray-900 '>
-          Hey there, I’m Hamish Boodhoo
+          Hi there, I’m Hamish.
         </h1>
         <h3 className='text-md md:text-lg font-light mb-4 text-gray-800 text-justify'>
-          I'm a self-taught developer who previously worked in finance. I am
-          passionate about building software and entrepreneurship. I use this
-          site to showcase my projects and personal blog. While you are here,
-          feel free to
-          <Link href='/projects'>
-            <a>
-              <span className='hover:cursor-pointer text-green-500'>
+          <p className='mb-5'>
+            I'm a{" "}
+            <RoughNotation
+              type='highlight'
+              multiline={true}
+              show={true}
+              color='#a7f3d0'
+              animationDuration={1500}
+            >
+              full-stack developer
+            </RoughNotation>{" "}
+            who is passionate about building{" "}
+            <RoughNotation
+              type='highlight'
+              multiline={true}
+              show={true}
+              color='#c7d2fd'
+              animationDuration={1500}
+            >
+              software
+            </RoughNotation>{" "}
+            and{" "}
+            <RoughNotation
+              type='highlight'
+              multiline={true}
+              show={true}
+              color='#ffff3f'
+              animationDuration={1500}
+            >
+              entrepreneurship
+            </RoughNotation>
+            . My background is in finance and the corporate world. However I've
+            discovered a passion for software development and computer science.
+            I'm currently looking to switch into the tech industry as a{" "}
+            developer. Feel free to{" "}
+            <Link href='/about'>
+              <a className='text-blue-500'>
                 <RoughNotation
                   type='underline'
+                  multiline={true}
                   show={true}
-                  color='#069668'
+                  color='#5fa4f9'
                   animationDuration={1500}
                 >
-                  {" "}
-                  check out my projects
+                  learn more about me.
                 </RoughNotation>
-              </span>
-            </a>
-          </Link>
-          , {""}
-          <Link href='/blogs'>
-            <a>
-              <span className='hover:cursor-pointer text-blue-500'>
+              </a>
+            </Link>
+          </p>
+          <p className='mb-5'>
+            I'm also very interested in the concept of building{" "}
+            <RoughNotation
+              type='highlight'
+              multiline={true}
+              show={true}
+              color='#fecaca'
+              animationDuration={1500}
+            >
+              profitable side-projects.
+            </RoughNotation>{" "}
+            My goal is to use my software development skills to build several
+            successful micro SaaS businesses. I aim start a{" "}
+            <RoughNotation
+              type='highlight'
+              multiline={true}
+              show={true}
+              color='#ddd6fe'
+              animationDuration={1500}
+            >
+              new project each month
+            </RoughNotation>{" "}
+            until one sticks. This also allows me grow my software development
+            skills and develop an understanding of key entrepreneurship
+            concepts. While you're here, you can
+            <Link href='/projects'>
+              <a className='text-blue-500'>
+                {" "}
                 <RoughNotation
                   type='underline'
+                  multiline={true}
                   show={true}
-                  color='#3b81f6'
+                  color='#5fa4f9'
                   animationDuration={1500}
                 >
-                  read my blog{" "}
-                </RoughNotation>
-              </span>
-            </a>
-          </Link>
-          or
-          <Link href='/about'>
-            <a>
-              <span className='hover:cursor-pointer text-red-500'>
+                  check out my projects.
+                </RoughNotation>{" "}
+              </a>
+            </Link>
+          </p>
+          <p>
+            Finally, I have a{" "}
+            <RoughNotation
+              type='highlight'
+              multiline={true}
+              show={true}
+              color='#deff0a'
+              animationDuration={1500}
+            >
+              personal blog
+            </RoughNotation>
+            . Where I write about various topics such as my experience building
+            my project and software development. If you have some free time,
+            <Link href='/blogs'>
+              <a className='text-blue-500'>
+                {" "}
                 <RoughNotation
                   type='underline'
+                  multiline={true}
                   show={true}
-                  color='#ef4444'
+                  color='#5fa4f9'
                   animationDuration={1500}
                 >
-                  {" "}
-                  learn more about me.{" "}
+                  skim through my posts
                 </RoughNotation>
-              </span>
-            </a>
-          </Link>
+                .
+              </a>
+            </Link>
+          </p>{" "}
         </h3>
-
         <div>
           <h1 className='font-bold mb-5 text-3xl md:text-4xl tracking-tight mt-20 text-gray-900 '>
             Main Projects
