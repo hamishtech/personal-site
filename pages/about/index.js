@@ -105,8 +105,7 @@ const About = () => {
             . Building these products has taught me about the importance of
             marketing, pricing and customer feedback when building products. As
             of September 2021, I plan on building at least one SaaS business per
-            month in the hope of creating successful mini businesses that can
-            generate me some side-income.
+            month in the hope of creating a successful personal business.
           </p>
           <p className='mt-5'></p>
           <p className='mb-5'>
