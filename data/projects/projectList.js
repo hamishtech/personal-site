@@ -9,7 +9,7 @@ export const projects = [
   },
   {
     title: "Morpher",
-    text: "SaaS that automatically changes your twitter profile picture and banner every hour.",
+    text: "Web app that automatically changes your twitter profile picture and banner every hour.",
     pic: "https://p.kindpng.com/picc/s/30-300671_squagray-icon-free-download-twitter-icon-black-square.png",
     github: "https://github.com/HB-1001/twics",
     link: "https://morpher.vercel.app/",
