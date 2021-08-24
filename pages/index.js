@@ -104,7 +104,7 @@ export default function Home({ blogs }) {
               </a>
             </Link>
           </p>
-          <p>
+          {/* <p>
             Finally, I have a{" "}
             <RoughNotation
               type='highlight'
@@ -132,7 +132,7 @@ export default function Home({ blogs }) {
                 .
               </a>
             </Link>
-          </p>{" "}
+          </p>{" "} */}
           <p className='mt-5 text-gray-700 font-semibold tracking-tighter'>
             Feel free to reach out if you want to hire a developer, have
             questions or just want to connect.
@@ -160,7 +160,7 @@ export default function Home({ blogs }) {
           })}
           <SeeMore slug='/projects' />
         </div>
-        <div>
+        {/* <div>
           <h1 className='font-bold mb-5 text-3xl md:text-4xl tracking-tight mt-20 text-gray-900 '>
             Recent Blog Posts
           </h1>
@@ -177,7 +177,7 @@ export default function Home({ blogs }) {
             );
           })}
           <SeeMore slug='/blogs' />
-        </div>
+        </div> */}
       </div>
     </Container>
   );
