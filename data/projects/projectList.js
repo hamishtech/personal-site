@@ -17,7 +17,7 @@ export const projects = [
     highlighted: true,
   },
   {
-    title: "Fantasy Football Predictions",
+    title: "Fantasy Football Predictions (in progress)",
     text: "Hobby project for friends or colleagues to compete in predicting football game results. Uses a league system to rank the best players.",
     pic: "https://www.freepnglogos.com/uploads/football-png/drawing-football-photo-4.png",
     github: "https://github.com/HB-1001/fantasybets",
