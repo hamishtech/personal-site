@@ -136,7 +136,15 @@ const coding = [
   },
   {
     title: "Backend Web Development",
-    text: ["Node.js", "Express", "MongoDB", "SQL(PostgreSQL)", "GraphQL"],
+    text: [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "PostgreSQL",
+      "GraphQL",
+      "Redis",
+      "Web Sockets",
+    ],
     color: "#0aefff",
   },
   {
