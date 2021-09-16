@@ -1,6 +1,6 @@
 export const socials = [
   {
-    href: "https://github.com/HB-1001",
+    href: "https://github.com/hamishtech",
     icon: (
       <svg
         xmlns='http://www.w3.org/2000/svg'
