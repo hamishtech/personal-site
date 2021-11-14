@@ -4,7 +4,6 @@ import Link from "next/link";
 import path from "path";
 import { RoughNotation } from "react-rough-notation";
 import Container from "../components/container/container";
-import BlogCard from "../components/homepage/BlogCard";
 import HomePageProjectCard from "../components/homepage/ProjectCard";
 import SeeMore from "../components/homepage/seeMore";
 import { projects } from "../data/projects/projectList";
@@ -50,8 +49,7 @@ export default function Home({ blogs }) {
             </RoughNotation>{" "}
             My background is in finance and the corporate world. However, I've
             discovered a deeper interest in software development and computer
-            science. I'm currently looking to enter the tech industry as a
-            developer. Feel free to{" "}
+            science. I'm currently working as a Flutter developer for a web agency. Feel free to{" "}
             <Link href='/about'>
               <a className='text-blue-500'>
                 <RoughNotation
