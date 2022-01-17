@@ -47,9 +47,7 @@ export default function Home({ blogs }) {
             >
               entrepreneurship.
             </RoughNotation>{" "}
-            My background is in finance and the corporate world. However, I've
-            discovered a deeper interest in software development and computer
-            science. I'm currently working as a Flutter developer for a web agency. Feel free to{" "}
+            I'm currently working as a Flutter developer for a web agency. Feel free to{" "}
             <Link href='/about'>
               <a className='text-blue-500'>
                 <RoughNotation
