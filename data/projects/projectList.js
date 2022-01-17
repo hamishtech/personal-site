@@ -10,7 +10,7 @@ export const projects = [
   {
     title: "Morpher",
     text: "Web app that automatically changes your twitter profile picture and banner every hour.",
-    pic: "https://p.kindpng.com/picc/s/30-300671_squagray-icon-free-download-twitter-icon-black-square.png",
+    pic: "https://cdn4.iconfinder.com/data/icons/neon-social-icons-set/256/social_media_icons_neon_set_256x256_0002_twitter.png",
     github: "https://github.com/HB-1001/twics",
     link: "https://morpher.vercel.app/",
     techStack: " Next.js • PostgreSQL • Scripting & Automation",
