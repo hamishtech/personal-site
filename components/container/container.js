@@ -233,5 +233,5 @@ const NavBar = [
   { text: "Home", href: "/" },
   { text: "Projects", href: "/projects" },
 //   { text: "Blog", href: "/blogs" },
-  { text: "About", href: "/about" },
+//   { text: "About", href: "/about" },
 ];

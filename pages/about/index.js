@@ -17,15 +17,15 @@ const About = () => {
           </p>{" "}
           <p className='mb-5'>
             {" "}
-            Feeling unfulfilled during my time working in finance, I wanted to
+            {/* Feeling unfulfilled during my time working in finance, I wanted to
             try out new things. I decided to have a go at coding and it
             immediately captivated me. I should have known coding was for me.
             After all, my favourite exercise when working in finance was
             financial modelling, which involved writing a lot of formulas on
             excel. Since February 2021, I've spent most of my free time learning
             computer science and web development. I am now looking to make the
-            switch into a tech career. You can check out my current capabilities
-            below:
+            switch into a tech career. */}
+            You can check out my current capabilities below:
             <ul className='mt-5'>
               {coding.map((item) => (
                 <li key={item.title} className='mb-5'>
