@@ -47,7 +47,7 @@ export default function Home({ blogs }) {
             >
               entrepreneurship.
             </RoughNotation>{" "}
-            I'm currently working as a Flutter developer for a software
+            I'm currently working as a full stack developer for a software
             development agency.
             {/* Feel free to{" "}
             <Link href='/about'>
